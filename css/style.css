@@ -1,0 +1,352 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* General */
+
+.btn {
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #ffff;
+    display: inline-block;
+}
+
+.btn-email {
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.input-email {
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    outline: 0;
+}
+
+.form-email {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.form-email .input-email {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.3;
+}
+
+.section-main {
+    padding: 100px 0;
+}
+
+/* Colors */
+
+.bg-gray {
+    background-color: #f8f9fa;
+}
+
+/* Header */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.brand-logo a {
+    color: #000;
+    font-size: 20px;
+}
+
+header nav .sign-in a {
+    padding: 10px 15px;
+}
+
+/* BuildPage */
+
+#section-buildpage {
+    position: relative;
+    padding: 200px 0;
+    background-image: url("../images/sea.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#section-buildpage h1 {
+    color: #fff;
+    font-size: 50px;
+    width: 80%;
+    margin: 0 auto 40px;
+}
+
+/* ICONS */
+
+.icons {
+    display: flex;
+}
+
+.icons .icons-item {
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+.icons .icons-item:hover i {
+    transform: scale(1.1, 1.1);
+    transition: 0.5s;
+}
+
+.icons .icons-item i {
+    font-size: 70px;
+    color: #007bff;
+}
+
+.icons .icons-item h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+}
+
+.icons .icons-item p {
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+/* PHOTOS */
+
+.photos-row {
+    display: flex;
+}
+
+.photos-item {
+    width: 50%;
+    height: 350px;
+}
+
+.photos-content {
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.photos-content h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.photos-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.photos-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.photos-row:nth-child(1) .photos-image {
+    background-image: url("../images/phone.jpg");
+}
+
+.photos-row:nth-child(2) .photos-image {
+    background-image: url("../images/code.jpg");
+}
+
+.photos-row:nth-child(3) .photos-image {
+    background-image: url("../images/baby.jpg");
+}
+
+.photos-row:nth-child(even) .photos-content {
+    order: 2;
+}
+
+/* ROUNDEDPHOTOS */
+
+#section-roundphotos {
+    padding: 112px;
+    background-color: #F8F9FA;
+}
+
+#section-roundphotos .roundphotos .photostext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-roundphotos .roundphotos .photostext .photostextalign {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section-roundphotos .roundphotos .maintext h2 {
+    display: flex;
+    justify-content: center;
+    font-weight: 700px;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #212529;
+    margin-bottom: 48px;
+}
+
+#section-roundphotos .roundphotos .photostext .photostextalign h5 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+#section-roundphotos .roundphotos .photostext .photostextalign .FredSara {
+    font-weight: 300;
+    line-height: 1.5;
+    width: 55%;
+    text-align: center;
+}
+
+#section-roundphotos .roundphotos .photostext .photostextalign .Margaret {
+    font-weight: 300;
+    line-height: 1.5;
+    width: 100%;
+    text-align: center;
+}
+
+#section-roundphotos .roundphotos .photostext .images img {
+    height: 192px;
+    width: 192px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 5px 0px #adb5bd;
+    margin-bottom: 16px;
+}
+
+/* READY */
+
+#section-ready {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/sea.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+#section-ready .rdtext {
+    display: flex;
+    justify-content: center;
+}
+
+#section-ready .rdtext h3 {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+#section-ready .rdinputbutton input {
+    padding: 8px 16px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#section-ready .rdinputbutton a {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 40px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+#section-ready .rdinputbutton a:hover {
+    background-color: blue;
+}
+
+#section-ready .rdinputbutton {
+    margin: 20px;
+}
+
+/* Footer */
+
+footer {
+    padding: 64px 0px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerul {
+    display: flex;
+}
+
+.footerul li {
+    margin: 0px 10px;
+    list-style-type: none;
+}
+
+.footerul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.footerul li a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.social {
+    display: flex;
+}
+
+.social div a i {
+    font-size: 32px;
+    color: #007bff;
+    margin: 0px 15px;
+}
+
+.social div a i:hover {
+    color: blue;
+}
+
+.about div p {
+    color: #6c757d;
+    font-weight: 400;
+    font-size: 80%;
+    margin-top: 10px;
+}
